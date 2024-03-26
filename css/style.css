@@ -65,7 +65,7 @@ body{
 }
 .banner-img img{
     width: 80%;
-    height: 350px;
+    height: auto;
 }
 .banner-text{
     color: white;
@@ -126,7 +126,7 @@ body{
 }
 .about-image img{
     width: 50%;
-    height: 250px;
+    height: auto;
 }
 .service{
     display: flex;
@@ -257,6 +257,7 @@ body{
         flex-direction: column-reverse;
         display: flex;
         justify-content: center;
+        gap:40px;
     }
     .banner-common{
         width: 90%;
