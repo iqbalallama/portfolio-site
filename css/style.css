@@ -257,7 +257,7 @@ body{
         flex-direction: column-reverse;
         display: flex;
         justify-content: center;
-        gap:40px;
+        gap:30px;
     }
     .banner-common{
         width: 90%;
