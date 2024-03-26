@@ -44,7 +44,7 @@ body{
 }
 .nav-lists a{
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 20px;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -80,7 +80,7 @@ body{
     width: 0ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: text 7s steps(16) infinite;
+    animation: text 7s steps(17) infinite;
     border-right: 2px solid coral;
     font-size: 30px;
     margin-bottom: 30px;
@@ -90,7 +90,7 @@ body{
         width: 0ch;
     }
     50%{
-        width: 16ch;
+        width: 17ch;
     }
 }
 .btn{
@@ -240,6 +240,12 @@ body{
         background-color: black;
         opacity: 0.8;
     }
+    .nav-title{
+        width: 60%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
     .nav-lists{
         display: none;
     }
@@ -257,7 +263,10 @@ body{
     }
     .banner-text{
         color: white;
-        padding-left: 0px;
+        padding-left: 20px;
+    }
+    .banner-img{
+        padding-left: 20px;
     }
     .banner-text h2{
         font-size: 30px;
@@ -323,6 +332,20 @@ body{
     
 }
 @media screen and (min-width:679px) and (max-width:979px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: gray;
+        opacity: 0.9;
+    }
+    .nav-title {
+        width: 60%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
     .nav-lists a{
         text-decoration: none;
         margin-right: 10px;
@@ -332,8 +355,22 @@ body{
         cursor: pointer;
         text-align: center;
     }
-    .nav-lists{
+    .nav-lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 60%;
         text-align: center;
-        
+        margin-top: 15px;
+    }
+    .banner-text {
+        color: white;
+        padding-left: 0px;
+    }
+    .banner-text h2 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 10px 0px;
     }
 }
