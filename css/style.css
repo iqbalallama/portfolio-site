@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 15px 0px;
+    position: fixed;
+}
+.nav-title{
+    width: 40%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-lists{
+    width: 40%;
+}
+.same{
+    color: coral;
+}
+.nav-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-lists a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 2px solid coral;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.banner-common{
+    width: 40%;
+}
+.banner-img img{
+    width: 80%;
+    height: 350px;
+}
+.banner-text{
+    color: white;
+    padding-left: 40px;
+}
+.banner-text h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.banner-text p{
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text 7s steps(16) infinite;
+    border-right: 2px solid coral;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 16ch;
+    }
+}
+.btn{
+    padding: 10px 15px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0px;
+}
+.about-text{
+    color: white;
+}
+.about-text h3{
+    margin: 10px 0px;
+}
+.about-same{
+    width: 40%;
+}
+.about-image{
+    text-align: center;
+}
+.about-image img{
+    width: 50%;
+    height: 250px;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+}
+.service h3{
+    font-size: 35px;
+    font-weight: bold;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap:20px;
+}
+.service-part{
+    width: 28%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    box-shadow: 20px 20px 50px grey;
+}
+.service-part img{
+    width: 100%;
+    height: 300px;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 100px;
+}
+.projects h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.project-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 90%;
+}
+.project{
+    width: 100%;
+}
+.project img{
+    width: 100%;
+    height: 400px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-top: 2px solid white;
+}
+.footer h3{
+    font-size: 30px;
+    color: white;
+}
+.footer p{
+    color: white;
+}
+.foot{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid coral;
+    text-align: center;
+    padding: 4px;
+    margin: 10px 0px;
+}
+.foot img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.font-icon{
+    /* background-color: coral; */
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:678px) {
+    .header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .nav-lists{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-common{
+        width: 90%;
+    }
+    .banner-img img{
+        width: 80%;
+        height: 350px;
+    }
+    .banner-text{
+        color: white;
+        padding-left: 0px;
+    }
+    .banner-text h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 10px 0px;
+    }
+    .banner-text p{
+        width: 0ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: text 7s steps(16) infinite;
+        border-right: 2px solid coral;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin: 150px 0px;
+    }
+    .about-same{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap:20px;
+    }
+    .service-part{
+        width: 80%;
+        text-align: center;
+        color: white;
+        padding: 15px;
+        box-shadow: 20px 20px 50px grey;
+    }
+    .service-part img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .project-item{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        width: 90%;
+    }
+    .project{
+        width: 100%;
+    }
+    .project img{
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+@media screen and (min-width:679px) and (max-width:979px) {
+    .nav-lists a{
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    .nav-lists{
+        text-align: center;
+        
+    }
+}
