@@ -184,6 +184,10 @@ body{
 .project img{
     width: 100%;
     height: 400px;
+    
+}
+.project:hover img{
+    opacity: 0.5;
 }
 
 .footer{
