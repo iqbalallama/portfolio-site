@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <script src="https://kit.fontawesome.com/f58f9c7597.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="nav-title">
+                <p class="nav-logo">Allam <span class="same">Iqbal</span></p>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-bars bar-icon"></i>
+            </div>
+            <div class="nav-lists" id="nav-lists">
+                <a class="nav-list active home" href="#home">Home</a>
+                <a class="nav-list" href="#about">About</li>
+                <a class="nav-list" href="#service">Service</a>
+                <a class="nav-list" href="#projects">Projects</a>
+                <a class="nav-list" href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="main">
+        <div class="discuss">
+            <h2 class="project-d">Project Details</h2><br>
+            <h3>Project Name: E-commerce Website</h3>
+            <p>
+                <br><br>
+                Overview:<br>
+                    Welcome to E-Commerce , where convenience meets quality in the world of online shopping. Our platform is designed to provide users with a seamless and enjoyable shopping experience, offering a wide range of products and services at competitive prices. Powered by cutting-edge technology and user-friendly interfaces, E-Commerce Emporium aims to redefine the way people shop online.
+                    <br><br>
+                    Key Features:
+                    <br>
+                    User-Friendly Interface: Our website boasts a sleek and intuitive design, making navigation effortless for users of all levels of technical proficiency.
+                    <br>
+                    Vast Product Selection: From fashion to home E-Commerce  offers a diverse array of products to cater to every need and preference.
+
+
+                    <br><br>
+                    Responsive Customer Support:<br> Have a question or concern? Our dedicated customer support team is readily available to assist you with prompt and courteous service, ensuring that your needs are met every step of the way.
+                    <br><br>
+                    Target Audience:<br>
+                    Whether you're a tech-savvy millennial, a busy professional, or a discerning consumer with specific tastes, our platform is tailored to meet your unique needs and preferences.
+                    <br><br>
+
+                    Technologies Used:<br>
+                    E-Commerce  is built using HTML, CSS, JavaScript, and APIs, ensuring a seamless and responsive web experience across all devices and platforms.<br><br>
+
+                    Conclusion:<br>
+                    With its user-friendly interface, vast product selection, secure payment gateway, personalized recommendations, and responsive customer support, E-Commerce Emporium is poised to become your go-to destination for all your online shopping needs. Join us today and experience the future of e-commerce firsthand!
+            </p>
+        </div>
+    </main>
+    <footer class="footer" id="contact">
+        <h3><span class="same">Contact</span> Me</h3>
+        <p>Front-end Developer</p>
+        <p>iqbalallama201@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/iqbal.badsha.1401" target="_blank"><i class="font-icon fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/kh-allama-iqbal-807a291b1/" target="_blank"><i class="font-icon fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/iqbalallama" target="_blank"><i class="font-icon fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com/iqbalallama201/" target="_blank"><i class="font-icon fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p>copyright &copy;</p>
+    </footer>
+    <script>
+        const home = document.querySelector('.home');
+        home.addEventListener('click',function(){
+            window.location = '../index.html';
+        })
+        const barIcon = document.querySelector('.bar-icon');
+        const navList = document.querySelector('.nav-lists');
+        barIcon.addEventListener('click',function(){
+            navList.classList.toggle('open')
+        })
+    </script>
+</body>
+</html>

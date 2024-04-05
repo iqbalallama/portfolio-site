@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <script src="https://kit.fontawesome.com/f58f9c7597.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="nav-title">
+                <p class="nav-logo">Allam <span class="same">Iqbal</span></p>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-bars bar-icon"></i>
+            </div>
+            <div class="nav-lists" id="nav-lists">
+                <a class="nav-list active home" href="#home">Home</a>
+                <a class="nav-list" href="#about">About</li>
+                <a class="nav-list" href="#service">Service</a>
+                <a class="nav-list" href="#projects">Projects</a>
+                <a class="nav-list" href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="main">
+        <div class="discuss">
+            <h2 class="project-d">Project Details</h2><br>
+            <h3>Project Name: Interactive Image Filter</h3>
+            <p><br><br>
+                                Overview:<br>
+                Welcome to Pixel Perfect, an innovative project that allows users to apply various filters and effects to images using the power of HTML, CSS, and raw JavaScript. Pixel Perfect provides a fun and interactive way for users to enhance and customize their images, unleashing their creativity and imagination.<br><br>
+
+                Key Features:<br>
+
+                Filter Library: Pixel Perfect offers a diverse library of filters and effects, including grayscale, sepia, blur, brightness adjustment, contrast enhancement, and more, allowing users to transform their images in countless ways.<br><br>
+
+                Real-Time Preview:<br> With real-time preview functionality, users can see the effects of each filter applied to their images instantly, making it easy to experiment and fine-tune their creations until they achieve the desired result.<br><br>
+
+                Customization Options:<br> Users have the flexibility to adjust the intensity, strength, and other parameters of each filter, enabling them to create unique and personalized effects tailored to their preferences.<br><br>
+
+                User-Friendly Interface:<br> Pixel Perfect features a sleek and intuitive interface that makes it easy for users to upload images, apply filters, and download their edited creations with just a few clicks.<br><br>
+
+                Cross-Platform Compatibility:<br> Whether you're using a desktop computer, laptop, tablet, or smartphone, Pixel Perfect works seamlessly across different devices and platforms, ensuring a consistent user experience.<br><br>
+
+                Target Audience:<br>
+                Pixel Perfect caters to a wide range of users, including photographers, graphic designers, artists, social media enthusiasts, and anyone who enjoys editing and enhancing images. Whether you're a beginner looking to experiment with filters or a seasoned professional seeking advanced customization options, Pixel Perfect has something for everyone.<br><br>
+
+                Unique Selling Proposition (USP):<br>
+                What sets Pixel Perfect apart from other image editing tools is its simplicity, versatility, and seamless integration of HTML, CSS, and raw JavaScript. By leveraging these technologies, Pixel Perfect delivers a fast, lightweight, and feature-rich solution that empowers users to unleash their creativity and transform ordinary images into extraordinary works of art.<br><br>
+
+                Technologies Used:<br>
+                Pixel Perfect is developed using HTML for structure, CSS for styling, and raw JavaScript for interactivity and functionality, ensuring optimal performance and compatibility across various browsers and devices.<br><br>
+
+                Conclusion:<br>
+                With its diverse filter library, real-time preview, customization options, user-friendly interface, and cross-platform compatibility, Pixel Perfect revolutionizes the way users edit and enhance images online. Whether you're looking to add a vintage vibe to your photos, create stunning visual effects, or simply have fun experimenting with filters, Pixel Perfect is your ultimate image editing companion. Experience the power of Pixel Perfect today and unlock endless possibilities for creative expression!
+            </p>
+        </div>
+    </main>
+    <footer class="footer" id="contact">
+        <h3><span class="same">Contact</span> Me</h3>
+        <p>Front-end Developer</p>
+        <p>iqbalallama201@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/iqbal.badsha.1401" target="_blank"><i class="font-icon fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/kh-allama-iqbal-807a291b1/" target="_blank"><i class="font-icon fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/iqbalallama" target="_blank"><i class="font-icon fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com/iqbalallama201/" target="_blank"><i class="font-icon fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p>copyright &copy;</p>
+    </footer>
+    <script>
+        const home = document.querySelector('.home');
+        home.addEventListener('click',function(){
+            window.location = '../index.html';
+        })
+        const barIcon = document.querySelector('.bar-icon');
+        const navList = document.querySelector('.nav-lists');
+        barIcon.addEventListener('click',function(){
+            navList.classList.toggle('open')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <script src="https://kit.fontawesome.com/f58f9c7597.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="nav-title">
+                <p class="nav-logo">Allam <span class="same">Iqbal</span></p>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-bars bar-icon"></i>
+            </div>
+            <div class="nav-lists" id="nav-lists">
+                <a class="nav-list active home" href="#home">Home</a>
+                <a class="nav-list" href="#about">About</li>
+                <a class="nav-list" href="#service">Service</a>
+                <a class="nav-list" href="#projects">Projects</a>
+                <a class="nav-list" href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="main">
+        <div class="discuss">
+            <h2 class="project-d">Project Details</h2><br>
+            <h3>Project Name:( Voiceify )Text to Voice Converter</h3>
+            <p>
+                <br><br>
+                Overview:<br>
+                    Welcome to Voiceify, your intuitive text-to-voice converter built with the power of HTML, CSS, and raw JavaScript. Voiceify empowers users to transform written text into spoken words effortlessly, enhancing accessibility and convenience across various applications and platforms.
+                    <br><br>
+                    Key Features:<br>
+
+                    Seamless Conversion: Voiceify seamlessly converts written text into clear and natural-sounding speech, enabling users to listen to content instead of reading it.<br><br>
+
+                    Customization Options:<br> Users have the flexibility to customize the voice, pitch, and speed of the generated speech to suit their preferences, ensuring a personalized listening experience.<br><br>
+
+                    User-Friendly Interface:<br> With a clean and intuitive interface, Voiceify makes the text-to-voice conversion process easy and accessible for users of all levels of technical proficiency.<br><br>
+
+                        Responsive Design:<br> Voiceify is designed to be responsive across different devices and screen sizes, allowing users to enjoy its functionality on desktops, laptops, tablets, and smartphones alike.
+                        <br><br>
+                        Cross-Browser Compatibility:<br> Whether you're using Chrome, Firefox, Safari, or any other modern web browser, Voiceify works seamlessly across various platforms, ensuring a consistent user experience.
+                        <br><br>
+                    Target Audience:<br>
+                    Voiceify caters to a wide range of users, including individuals with visual impairments, busy professionals seeking multitasking capabilities, students looking for alternative study tools, and anyone who prefers listening to content instead of reading it.
+                    <br><br>
+                    Unique Selling Proposition (USP):<br>
+                    What sets Voiceify apart from other text-to-voice converters is its simplicity, customization options, and seamless integration of HTML, CSS, and raw JavaScript. By harnessing the power of these technologies, Voiceify delivers a user-friendly and feature-rich solution that meets the diverse needs of its users.
+                    <br><br>
+                    Technologies Used:<br>
+                    Voiceify is developed using HTML for structure, CSS for styling, and raw JavaScript for functionality, ensuring a lightweight, efficient, and cross-platform solution.<br><br>
+
+                    Conclusion:<br>
+                    With its seamless conversion capabilities, customization options, user-friendly interface, and cross-browser compatibility, Voiceify revolutionizes the way users interact with written content online. Whether you're looking to enhance accessibility, improve productivity, or simply enjoy a hands-free browsing experience, Voiceify is your go-to text-to-voice converter. Experience the power of Voiceify today and unlock a world of possibilities with the spoken word!
+            </p>
+        </div>
+    </main>
+    <footer class="footer" id="contact">
+        <h3><span class="same">Contact</span> Me</h3>
+        <p>Front-end Developer</p>
+        <p>iqbalallama201@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/iqbal.badsha.1401" target="_blank"><i class="font-icon fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/kh-allama-iqbal-807a291b1/" target="_blank"><i class="font-icon fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/iqbalallama" target="_blank"><i class="font-icon fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com/iqbalallama201/" target="_blank"><i class="font-icon fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p>copyright &copy;</p>
+    </footer>
+    <script>
+        const home = document.querySelector('.home');
+        home.addEventListener('click',function(){
+            window.location = '../index.html';
+        })
+        const barIcon = document.querySelector('.bar-icon');
+        const navList = document.querySelector('.nav-lists');
+        barIcon.addEventListener('click',function(){
+            navList.classList.toggle('open')
+        })
+    </script>
+</body>
+</html>

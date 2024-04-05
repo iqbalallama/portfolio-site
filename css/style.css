@@ -30,6 +30,11 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
+.bar-icon{
+    color: coral;
+    font-size: 25px;
+    display: none;
+}
 .nav-lists{
     width: 40%;
 }
@@ -180,6 +185,7 @@ body{
 }
 .project{
     width: 100%;
+    box-shadow: 0px 2px 5px gray;
 }
 .project img{
     width: 100%;
@@ -241,6 +247,7 @@ body{
     .navbar{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         background-color: black;
         opacity: 0.8;
     }
@@ -250,9 +257,32 @@ body{
         font-weight: bold;
         text-align: center;
     }
-    .nav-lists{
-        display: none;
+    .bar-icon{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
     }
+    .nav-lists{
+        visibility: hidden;
+    }
+    .open{
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+        margin-top: 20px;
+        
+    }
+    .nav-list{
+        margin-top: 20px;
+        padding: 5px;
+    }
+    /* .nav-lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    } */
     .banner{
         flex-direction: column-reverse;
         display: flex;
@@ -353,7 +383,7 @@ body{
 
     .nav-lists a{
         text-decoration: none;
-        margin-right: 10px;
+        margin-right: 5px;
         font-size: 20px;
         font-weight: bold;
         color: white;
